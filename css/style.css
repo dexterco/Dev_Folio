@@ -2,6 +2,14 @@
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
+}
+body {
+  background: linear-gradient(116.02deg, #000428 0.77%, #004e92 99.63%);
+  background-repeat: no-repeat;
+  height: 100vh;
+  color: white;
+  overflow-x: hidden;
+  overflow-y: hidden;
   /* User will not select anythting */
   -webkit-touch-callout: none;
   -webkit-user-select: none;
@@ -9,13 +17,6 @@
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-}
-body {
-  background: linear-gradient(116.02deg, #000428 0.77%, #004e92 99.63%);
-  background-repeat: no-repeat;
-  height: 100vh;
-  color: white;
-  overflow-y: hidden;
 }
 
 /* css for header starts*/
@@ -37,7 +38,7 @@ body {
   align-items: center;
 }
 .nav-logo img {
-  margin-left: -60px;
+  margin-left: -50px;
 }
 .header-text {
   margin-left: 0px;
@@ -52,7 +53,7 @@ body {
   list-style: none;
   display: inline-block;
   margin-right: 30px;
-  font-family: "Noto Sans";
+  font-family: Noto Sans, sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
@@ -140,11 +141,12 @@ body {
 @media (max-width: 800px) {
   .responsive-menu {
     position: absolute;
-    width: 100%;
+    width: 100vw;
     left: -780px;
     height: 100vh;
-    background-color: black;
-    opacity: 0.3;
+
+    background-color: rgba(255, 255, 255, 0.2);
+    /* opacity: 0.3; */
     transition: 1s;
     display: none;
   }
@@ -157,6 +159,7 @@ body {
 .responsive-nav-links ul li a {
   color: white;
   text-decoration: none;
+  font-family: Noto Sans, sans-serif;
   border-bottom: 1px solid white;
   transition: 0.3s;
 }
@@ -168,8 +171,11 @@ body {
 }
 .responsive-nav-links ul li {
   list-style: none;
-  font-size: 30px;
+  font-size: 25px;
   margin-bottom: 20px;
+}
+.responsive-menu ul {
+  margin-top: -150px;
 }
 
 .responsive-nav-links {
