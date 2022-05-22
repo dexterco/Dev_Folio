@@ -3,6 +3,10 @@
   padding: 0px;
   box-sizing: border-box;
 }
+html {
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
 body {
   background: linear-gradient(116.02deg, #000428 0.77%, #004e92 99.63%);
   background-repeat: no-repeat;
