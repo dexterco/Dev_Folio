@@ -36,6 +36,9 @@ body {
   display: flex;
   align-items: center;
 }
+.nav-logo img {
+  margin-left: -60px;
+}
 .header-text {
   margin-left: 0px;
   flex: 1;
