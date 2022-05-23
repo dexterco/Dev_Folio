@@ -2,18 +2,6 @@
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
-}
-/* html {
-  overflow-x: hidden;
-  overflow-y: hidden;
-} */
-body {
-  background: linear-gradient(116.02deg, #000428 0.77%, #004e92 99.63%);
-  background-repeat: no-repeat;
-
-  color: white;
-  /* overflow-x: hidden; */
-  /* overflow-y: hidden; */
   /* User will not select anythting */
   -webkit-touch-callout: none;
   -webkit-user-select: none;
@@ -21,6 +9,18 @@ body {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+}
+html {
+  overflow-x: hidden;
+  /* overflow-y: hidden; */
+}
+body {
+  background: linear-gradient(116.02deg, #000428 0.77%, #004e92 99.63%);
+  background-repeat: no-repeat;
+
+  color: white;
+  overflow-x: hidden;
+  /* overflow-y: hidden; */
 }
 
 /* css for header starts*/
@@ -192,15 +192,17 @@ body {
   padding-top: 20px;
   margin: auto;
 }
-
+/* ------------------------------------------------------------------------------ */
 /* css for header ends */
 
 /* hero section styling starts */
 .hero {
-  height: 500px;
+  /* height: 500px; */
   /* border: 2px solid white; */
 }
-
+.hero-text {
+  opacity: 0.9;
+}
 .hero-profile {
   width: 394px;
   height: 394px;
@@ -209,21 +211,19 @@ body {
 }
 
 @media (max-width: 900px) {
-  .hero {
+  /* .hero {
     height: 400px;
-  }
+  } */
   .hero-profile {
     height: 200px;
     width: 200px;
   }
 }
 
-/* @media (max-width: 500px) {
-  .hero-profile {
-    height: 220px;
-    width: 220px;
-  }
+/* .extra-space {
+  display: none;
 } */
+
 .lineBreak {
   margin-top: 50px;
   margin-bottom: 50px;
